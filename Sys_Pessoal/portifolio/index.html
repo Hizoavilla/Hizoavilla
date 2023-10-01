@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfólio do Programador</title>
+    <style>
+        /* CSS interno para adicionar interatividade aos botões */
+        nav a:hover {
+            color: #ff00ff; /* Altera a cor ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sobre" class="section">
+        <div class="container">
+            <h1>Sobre Mim</h1>
+            <img src="F:\Hizo\DEV\imagens\img1.jpg" alt="Imagem de Programador">
+            <p>Sou um programador iniciante focado em projetos de geração de leads de clientes. Estou comprometido em fornecer soluções de qualidade para ajudar empresas a crescerem.</p>
+        </div>
+    </section>
+
+    <section id="projetos" class="section">
+        <div class="container">
+            <h1>Projetos</h1>
+            <div class="project">
+                <img src="F:\Hizo\DEV\imagens\img2.jpg" alt="Imagem do Projeto 1">
+                <h2>Projeto 1</h2>
+                <p>Descrição do Projeto 1.</p>
+            </div>
+            <div class="project">
+                <img src="F:\Hizo\DEV\imagens\img3.jpg" alt="Imagem do Projeto 2">
+                <h2>Projeto 2</h2>
+                <p>Descrição do Projeto 2.</p>
+            </div>
+            <!-- Adicione mais projetos conforme necessário -->
+        </div>
+    </section>
+
+    <section id="contato" class="section">
+        <div class="container">
+            <h1>Contato</h1>
+            <p>Entre em contato comigo através do email: seuemail@example.com</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Seu Nome</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript interno para adicionar interatividade aos botões
+        const navLinks = document.querySelectorAll('nav a');
+
+        navLinks.forEach(link => {
+            link.addEventListener('mouseenter', () => {
+                link.style.color = '#ff00ff'; // Altera a cor ao passar o mouse
+            });
+
+            link.addEventListener('mouseleave', () => {
+                link.style.color = '#fff'; // Restaura a cor ao remover o mouse
+            });
+        });
+    </script>
+</body>
+</html>
